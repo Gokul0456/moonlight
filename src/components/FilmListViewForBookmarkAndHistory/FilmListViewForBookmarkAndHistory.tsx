@@ -137,7 +137,7 @@ const FilmListViewForBookmarkAndHistory: FunctionComponent<
             className="h-10 w-10 rounded-full object-cover"
           />
           <p className="text-xl text-white font-medium tracking-wider uppercase">
-            Movie<span className="text-primary">Mania</span>
+            Yet<span className="text-primary">Watch</span>
           </p>
         </Link>
         <button onClick={() => setIsSidebarActive((prev) => !prev)}>

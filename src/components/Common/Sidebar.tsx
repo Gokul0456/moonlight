@@ -91,8 +91,8 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarActive, onCloseSidebar }) => {
               className="w-10 h-10"
             />
             <h1 className="text-xl text-white tracking-widest font-semibold uppercase">
-              <span>Movie</span>
-              <span className="text-primary">light</span>
+              <span>Yet</span>
+              <span className="text-primary">Watch</span>
             </h1>
           </Link>
         )}

@@ -28,36 +28,6 @@ const Reply: FunctionComponent<ReplyProps> = ({ commendId }) => {
   );
 
   // Auto comment
-  useEffect(() => {
-    getDocs(collection(db, "replyTo-admin")).then((docSnapshot) => {
-      if (
-        !docSnapshot.docs.some(
-          (doc) => doc.data()?.user.uid === "Z3eRARZ9jlftBLA6u0g8MWABkwo2"
-        )
-      ) {
-        addDoc(collection(db, "replyTo-admin"), {
-          user: {
-            displayName: "Because you don't know",
-            email: "huuphuoc5@gmail.com",
-            emailVerified: false,
-            photoURL: "https://i.ibb.co/zrXfKsJ/catface-7.jpg",
-            uid: "Z3eRARZ9jlftBLA6u0g8MWABkwo2",
-          },
-          value: "That's terrible shao,Just a Joke",
-          reactions: {
-            CZGmXpePYsd1YryQR3C8xA5YOzb2: "angry",
-            GMaGmpy8ZaRBEhtaoZJdd9pNNXz1: "haha",
-            UNuwtFtu69YHDGTs2emT6O8ClSG3: "haha",
-          },
-          createdAt: Timestamp.fromDate(
-            new Date("Sat Aug 03 2022 05:25:32 GMT+0545 (Nepal Time)")
-          ),
-          isEdited: false,
-        });
-      }
-    });
-  }, []);
-
   return (
     <>
       {commentData && commentData.size > 0 && (
