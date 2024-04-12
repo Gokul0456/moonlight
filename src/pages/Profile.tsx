@@ -154,7 +154,7 @@ const Profile: FunctionComponent<ProfileProps> = () => {
 
   return (
     <>
-      <Title value="Profile | MovieMania" />
+      <Title value="Profile | YetWatch" />
 
       <ToastContainer />
 

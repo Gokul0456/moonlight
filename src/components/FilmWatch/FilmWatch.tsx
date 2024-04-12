@@ -99,7 +99,7 @@ const FilmWatch: FunctionComponent<FilmWatchProps & getWatchReturnedType> = ({
             (detail as DetailMovie).title || (detail as DetailTV).name
           } ${
             media_type === "tv" ? `- Season ${seasonId} - Ep ${episodeId}` : ""
-          } | MovieMania`}
+          } | YetWatch`}
         />
       )}
 
@@ -144,7 +144,7 @@ const FilmWatch: FunctionComponent<FilmWatchProps & getWatchReturnedType> = ({
                         episodeId as number
                       )
                 }
-                title="MovieMania Player"
+                title="YetWatch Player"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>

@@ -75,7 +75,7 @@ const Explore: FunctionComponent<ExploreProps> = () => {
   }, [window.location.search]);
   return (
     <>
-      <Title value="Explore | MovieMania" />
+      <Title value="Explore | YetWatch" />
 
       <button
         onClick={scrollToTop}

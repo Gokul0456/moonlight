@@ -74,7 +74,7 @@ const Home: FC = () => {
 
   return (
     <>
-      <Title value="MovieMania | MovieMania is the best free online Movie, Serie & Anime website that you shouldn't miss!" />
+      <Title value="YetWatch | YetWatch is the best free online Movie, Serie & Anime website that you shouldn't miss!" />
 
       <div className="flex md:hidden justify-between items-center px-5 my-5">
         <Link to="/" className="flex gap-2 items-center">

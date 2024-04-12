@@ -11,7 +11,7 @@ const Auth: FunctionComponent<AuthProps> = () => {
   const { isMobile } = useCurrentViewportView();
   return (
     <>
-      <Title value={"Sign In | MovieMania"} />
+      <Title value={"Sign In | YetWatch"} />
 
       {!isMobile && (
         <video
