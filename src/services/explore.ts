@@ -11,6 +11,7 @@ export const getExploreMovie: (
       params: {
         ...config,
         page,
+        with_networks: '213', // Add this parameter for Netflix
       },
     })
   ).data;
@@ -37,6 +38,7 @@ export const getExploreTV: (
       params: {
         ...config,
         page,
+        with_networks: '213', // Add this parameter for Netflix
       },
     })
   ).data;
