@@ -6,11 +6,11 @@ import { HomeFilms } from "../shared/types";
 ///////////////////////////////////////////////////////////////
 export const getHomeMovies = async (): Promise<HomeFilms> => {
   const endpoints: { [key: string]: string } = {
-    Trending: "/trending/movie/day",
-    Popular: "/movie/popular",
-    "Top Rated": "/movie/top_rated",
-    Hot: "/trending/movie/day?page=2",
-    Upcoming: "/movie/upcoming",
+    Trending: "/trending/movie/day?with_networks=213", // Add with_networks parameter
+    Popular: "/movie/popular?with_networks=213", // Add with_networks parameter
+    "Top Rated": "/movie/top_rated?with_networks=213", // Add with_networks parameter
+    Hot: "/trending/movie/day?page=2&with_networks=213", // Add with_networks parameter
+    Upcoming: "/movie/upcoming?with_networks=213", // Add with_networks parameter
   };
 
   const responses = await Promise.all(
@@ -78,11 +78,11 @@ export const getMovieBannerInfo = async (
 
 export const getHomeTVs = async (): Promise<HomeFilms> => {
   const endpoints: { [key: string]: string } = {
-    Trending: "/trending/tv/day",
-    Popular: "/tv/popular",
-    "Top Rated": "/tv/top_rated",
-    Hot: "/trending/tv/day?page=2",
-    "On the air": "/tv/on_the_air",
+    Trending: "/trending/tv/day?with_networks=213", // Add with_networks parameter
+    Popular: "/tv/popular?with_networks=213", // Add with_networks parameter
+    "Top Rated": "/tv/top_rated?with_networks=213", // Add with_networks parameter
+    Hot: "/trending/tv/day?page=2&with_networks=213", // Add with_networks parameter
+    "On the air": "/tv/on_the_air?with_networks=213", // Add with_networks parameter
   };
 
   const responses = await Promise.all(
