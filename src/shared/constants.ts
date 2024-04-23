@@ -1,8 +1,8 @@
 export const API_URL = "https://api.themoviedb.org/3";
 export const IMAGE_URL = "https://image.tmdb.org/t/p";
 //This is Superembed
-export const EMBED_URL = " https://multiembed.mov";  
- //export const EMBED_VIDSRC = "https://vidsrc.me/embed";
+//export const EMBED_URL = " https://multiembed.mov";  
+ export const EMBED_VIDSRC = "https://vidsrc.in";
 //export const EMBED_TO = "https://autoembed.co";
 
 export const reactionColorForTailwindCSS = {

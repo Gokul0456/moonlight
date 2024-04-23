@@ -12,12 +12,18 @@ export const resizeImage = (
   //`${EMBED_TO}/tv/tmdb/${id}-${season}-${episode}`;
 
 // SuperEmbed
-export const embedMovie = (id: number): string => `${EMBED_URL}/directstream.php?video_id=${id}&tmdb=1`;
+//export const embedMovie = (id: number): string => `${EMBED_URL}/directstream.php?video_id=${id}&tmdb=1`;
+
+//export const embedTV = (id: number, season: number, episode: number): string =>
+//`${EMBED_URL}/directstream.php?video_id=${id}&tmdb=1&s=${season}&e=${episode}`;
+
+//VidSrc
+export const embedMovie = (id: number): string => `${EMBED_URL}/embed/movie/${id}`;
 
 export const embedTV = (id: number, season: number, episode: number): string =>
-`${EMBED_URL}/directstream.php?video_id=${id}&tmdb=1&s=${season}&e=${episode}`;
+`${EMBED_URL}/embed/tv/${id}/${season}/${episode}`;
 
-
+//function
 export const calculateTimePassed = (time: number): string => {
   const unit = {
     year: 12 * 30 * 24 * 60 * 60 * 1000,
